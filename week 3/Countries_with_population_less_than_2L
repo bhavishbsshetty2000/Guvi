@@ -18,7 +18,7 @@ request.send();
 request.onload=function(){
     var data=JSON.parse(this.responseText);
     //Filter countries with less than 2 lakh population
-    var countries=data.filter(item=>{
+    data.filter(item=>{
         if(item.population <=200000)
         {
             console.log( item.name);
