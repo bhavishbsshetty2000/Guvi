@@ -17,6 +17,7 @@ request.open('GET','https://restcountries.eu/rest/v2/all',true);
 request.send();
 request.onload=function(){
     var data=JSON.parse(this.responseText);
+    //Filter countries in Asia
     var Asian_countries=data.filter(item=>{
         if(item.region==="Asia")
         {
