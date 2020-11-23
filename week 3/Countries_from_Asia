@@ -18,7 +18,7 @@ request.send();
 request.onload=function(){
     var data=JSON.parse(this.responseText);
     //Filter countries in Asia
-    var Asian_countries=data.filter(item=>{
+    data.filter(item=>{
         if(item.region==="Asia")
         {
             console.log( item.name);
