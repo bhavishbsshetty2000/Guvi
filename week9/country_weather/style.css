@@ -1,0 +1,8 @@
+body {
+
+    background: linear-gradient(to right, #240b36, #c31432);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px 50px;
+    justify-content: center;
+}
